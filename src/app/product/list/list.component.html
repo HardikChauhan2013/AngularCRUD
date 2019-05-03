@@ -6,9 +6,8 @@
 <table class="table">
   <tr>
     <th>Id</th>
-    <th (click)="sortByName()"><u>Product Name</u></th>
-    <th (click)="sortByPrice()"><u>Price</u></th>
-    <th></th>
+    <th><u>Product Name</u></th>
+    <th><u>Price</u></th>
     <th></th>
   </tr>
   <tr *ngFor="let item of list">
@@ -17,9 +16,6 @@
     <td>{{item.ProductPrice|currency}}</td>
     <td>
       <button class="btn btn-danger" (click)="delete(item.id)">Delete</button>
-    </td>
-    <td>
-      <button class="btn btn-info" (click)="addToCard(item)">Add To Card</button>
     </td>
   </tr>
 </table>

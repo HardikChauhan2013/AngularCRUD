@@ -19,37 +19,6 @@
       "id": 4,
       "ProductName": "Pen Drive",
       "ProductPrice": 500
-    },
-    {
-      "ProductName": "Fan",
-      "ProductPrice": "1200",
-      "id": 5
-    }
-  ],
-  "Users": [
-    {
-      "id": 1,
-      "UserName": "user1",
-      "Password": "pass1"
-    },
-    {
-      "id": 2,
-      "UserName": "user2",
-      "Password": "pass2"
-    }
-  ],
-  "Cards": [
-    {
-      "ProductName": "Pen Drive",
-      "ProductPrice": 500,
-      "Quntity": 1,
-      "id": 7
-    },
-    {
-      "ProductName": "Book",
-      "ProductPrice": 1000,
-      "Quntity": 1,
-      "id": 9
     }
   ]
 }

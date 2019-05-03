@@ -8,14 +8,14 @@ export class ProductService {
 
   constructor(@Inject(HttpClient) private proxy: HttpClient) { }
 
-  PRODUCT_SERVICE = 'http://localhost:3000/Products';
+  PRODUCT_SERVICE = 'http://localhost:3000/Products/';
 
   getAll(): any {
     return this.proxy.get(this.PRODUCT_SERVICE).toPromise();
   }
 
   get(id): any {
-    return this.proxy.get(`this.PRODUCT_SERVICE/${id}`).toPromise();
+    return this.proxy.get(this.PRODUCT_SERVICE + id).toPromise();
   }
 
   create(value) {
@@ -24,11 +24,11 @@ export class ProductService {
 
 
   update(id, value) {
-    return this.proxy.put(`this.PRODUCT_SERVICE/${id}`, value).toPromise();
+    return this.proxy.put(this.PRODUCT_SERVICE + id, value).toPromise();
   }
 
 
   delete(id) {
-    return this.proxy.delete(`this.PRODUCT_SERVICE/${id}`).toPromise();
+    return this.proxy.delete(this.PRODUCT_SERVICE + id).toPromise();
   }
 }

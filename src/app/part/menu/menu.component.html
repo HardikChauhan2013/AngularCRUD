@@ -9,14 +9,4 @@
   <li class="nav-item">
     <a class="nav-link" routerLink="product/list">Product List</a>
   </li>
-  <li class="nav-item">
-      <a class="nav-link" routerLink="addtocard">Card({{cardItemCount}})</a>
-    </li>
-  <li class="nav-item" *ngIf="currentUser==null">
-    <a class="nav-link" routerLink="login">Login</a>
-  </li>
-  
-  <li class="nav-item" *ngIf="currentUser">
-      <a class="nav-link" routerLink="/" (click)="signOut()">{{currentUser.UserName}} Logout</a>
-    </li>
 </ul>

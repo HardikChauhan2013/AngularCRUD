@@ -5,8 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  templateUrl: './edit.component.html'
 })
 export class EditComponent implements OnInit {
 
@@ -25,7 +24,7 @@ export class EditComponent implements OnInit {
 
   saveData() {
     if (this.frm.valid) {
-      this.service.update(this.frm.value.ProductId, this.frm.value).then(() => {
+      this.service.update(this.frm.value.id, this.frm.value).then(() => {
         alert('Product Updated');
       }).catch(err => {
         alert(`Product Update Error ${err}`);
