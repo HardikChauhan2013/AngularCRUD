@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class EditComponent implements OnInit {
 
   frm = new FormGroup({
-    ProductId: new FormControl(''),
+    id: new FormControl(''),
     ProductName: new FormControl(''),
     ProductPrice: new FormControl(''),
   });

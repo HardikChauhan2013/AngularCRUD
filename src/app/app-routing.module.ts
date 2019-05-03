@@ -7,6 +7,7 @@ import { LoginComponent } from './page/login/login.component';
 import { ListComponent } from './product/list/list.component';
 import { CreateComponent } from './product/create/create.component';
 import { EditComponent } from './product/edit/edit.component';
+import { AddtocardComponent } from './addtocard/addtocard.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'product/list', component: ListComponent },
   { path: 'product/create', component: CreateComponent },
   { path: 'product/edit/:id', component: EditComponent },
+  { path: 'addtocard', component: AddtocardComponent },
   { path: '', component: HomeComponent }
 ];
 

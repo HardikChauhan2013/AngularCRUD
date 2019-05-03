@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,7 @@ import { MenuComponent } from './part/menu/menu.component';
 import { ListComponent } from './product/list/list.component';
 import { CreateComponent } from './product/create/create.component';
 import { EditComponent } from './product/edit/edit.component';
+import { AddtocardComponent } from './addtocard/addtocard.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,15 @@ import { EditComponent } from './product/edit/edit.component';
     MenuComponent,
     ListComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    AddtocardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
