@@ -2,21 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2. 
 
-### Sample project angular beginer 
+### Sample project for beginer 
+
 - CRUD operation
 - Template driven form
 - Reactive form
 - WebAPI integration
 - Routing
 
-## Development Angular UI application server
+## WebAIP service
+
 - npm install -g json-server
 - Run `json-server --watch db.json` for a webapi server. Navigate to `http://localhost:3000/`. for more info [jsonplaceholder](https://jsonplaceholder.typicode.com/)
 
 ## Run Angular UI application server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 
 ## Code scaffolding
 
